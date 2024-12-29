@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo Card 2</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 0 auto;
+        }
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+            vertical-align: middle;
+            width: 20%;
+            height: 100px;
+        }
+        .selected {
+            background-color: #add8e6; /* Light blue */
+        }
+        @media screen and (max-width: 600px) {
+            table {
+                width: 100%;
+                display: block;
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Bingo Card 2</h1>
+    <table>
+        <tr><td>A portrait of a notable figure</td><td>A piece with a gold frame</td><td>A piece of art with a sunset</td><td>A painting featuring clouds</td><td>An artwork with calligraphy</td></tr><tr><td>A piece with a political or social message</td><td>A painting or sculpture with a mythological theme</td><td>An abstract artwork with geometric shapes</td><td>A black-and-white photograph</td><td>A gallery with wood flooring</td></tr><tr><td>A modern art installation</td><td>A gallery with ornate decorations</td><td>FREE</td><td>A painting featuring water</td><td>A gallery with high ceilings</td></tr><tr><td>A work of art involving nature</td><td>A decorative vase or pottery</td><td>A digital or multimedia art installation</td><td>A historical map or cartography exhibit</td><td>A vibrant abstract painting</td></tr><tr><td>A colorful mosaic or tile art</td><td>A minimalist art piece</td><td>A piece featuring musical instruments</td><td>An artwork made of mixed media</td><td>A painting from the Impressionist era</td></tr>
+    </table>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('td').forEach(function(cell) {
+                cell.addEventListener('click', function() {
+                    this.classList.toggle('selected');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

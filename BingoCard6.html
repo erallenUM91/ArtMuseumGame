@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo Card 6</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 0 auto;
+        }
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+            vertical-align: middle;
+            width: 20%;
+            height: 100px;
+        }
+        .selected {
+            background-color: #add8e6; /* Light blue */
+        }
+        @media screen and (max-width: 600px) {
+            table {
+                width: 100%;
+                display: block;
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Bingo Card 6</h1>
+    <table>
+        <tr><td>A black-and-white photograph</td><td>A surrealist artwork</td><td>A painting from the Impressionist era</td><td>A colorful mosaic or tile art</td><td>A painting featuring clouds</td></tr><tr><td>A painting featuring dancers</td><td>A historical map or cartography exhibit</td><td>A portrait of a notable figure</td><td>A modern art installation</td><td>A gallery with wood flooring</td></tr><tr><td>A large-scale mural</td><td>A piece with a political or social message</td><td>FREE</td><td>A work of art involving nature</td><td>A painting or sculpture with a mythological theme</td></tr><tr><td>A display case with ancient artifacts</td><td>A painting depicting a historical event</td><td>A digital or multimedia art installation</td><td>A painting featuring water</td><td>A work of art with animals</td></tr><tr><td>A gallery with high ceilings</td><td>A work of art involving glass</td><td>A painting with vibrant red tones</td><td>An abstract artwork with geometric shapes</td><td>A minimalist black-and-white artwork</td></tr>
+    </table>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('td').forEach(function(cell) {
+                cell.addEventListener('click', function() {
+                    this.classList.toggle('selected');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

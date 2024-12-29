@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo Card 5</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 0 auto;
+        }
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+            vertical-align: middle;
+            width: 20%;
+            height: 100px;
+        }
+        .selected {
+            background-color: #add8e6; /* Light blue */
+        }
+        @media screen and (max-width: 600px) {
+            table {
+                width: 100%;
+                display: block;
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Bingo Card 5</h1>
+    <table>
+        <tr><td>A painting depicting a historical event</td><td>A decorative vase or pottery</td><td>A gallery with high ceilings</td><td>A painting with vibrant red tones</td><td>A painting featuring water</td></tr><tr><td>A minimalist black-and-white artwork</td><td>A digital or multimedia art installation</td><td>A modern art installation</td><td>An abstract artwork with geometric shapes</td><td>A colorful mosaic or tile art</td></tr><tr><td>A piece featuring musical instruments</td><td>A surrealist artwork</td><td>FREE</td><td>A large-scale mural</td><td>A piece with a political or social message</td></tr><tr><td>A gallery with ornate decorations</td><td>A piece with a gold frame</td><td>A display case with ancient artifacts</td><td>A piece featuring a famous Chicago landmark</td><td>A minimalist art piece</td></tr><tr><td>A painting featuring dancers</td><td>A painting from the Impressionist era</td><td>A black-and-white photograph</td><td>A portrait with an elaborate background</td><td>A work of art involving glass</td></tr>
+    </table>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('td').forEach(function(cell) {
+                cell.addEventListener('click', function() {
+                    this.classList.toggle('selected');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

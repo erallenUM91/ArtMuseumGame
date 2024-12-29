@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo Card 4</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 0 auto;
+        }
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+            vertical-align: middle;
+            width: 20%;
+            height: 100px;
+        }
+        .selected {
+            background-color: #add8e6; /* Light blue */
+        }
+        @media screen and (max-width: 600px) {
+            table {
+                width: 100%;
+                display: block;
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Bingo Card 4</h1>
+    <table>
+        <tr><td>A painting depicting a historical event</td><td>A minimalist art piece</td><td>A work of art involving glass</td><td>A decorative vase or pottery</td><td>A gallery with ornate decorations</td></tr><tr><td>A painting or sculpture with a mythological theme</td><td>A gallery with high ceilings</td><td>An artwork with calligraphy</td><td>A modern art installation</td><td>A painting from the Impressionist era</td></tr><tr><td>A digital or multimedia art installation</td><td>A piece featuring musical instruments</td><td>FREE</td><td>A surrealist artwork</td><td>A gallery with natural light</td></tr><tr><td>A painting with vibrant red tones</td><td>A piece featuring a famous Chicago landmark</td><td>A portrait of a notable figure</td><td>A piece with a political or social message</td><td>A painting featuring dancers</td></tr><tr><td>A sculpture made of marble</td><td>A detailed pencil or charcoal sketch</td><td>A work of art with animals</td><td>A large-scale mural</td><td>A minimalist black-and-white artwork</td></tr>
+    </table>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('td').forEach(function(cell) {
+                cell.addEventListener('click', function() {
+                    this.classList.toggle('selected');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
